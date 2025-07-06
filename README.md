@@ -28,14 +28,16 @@ public:
 
 2
 #include<cstdlib>
-void update(int *a,int *b) {
+void update(int *a,int *b)
+{
     int sum=*a+*b;
     int diff=abs(*a-*b);   
     *a=sum;
     *b=diff;
 }
 
-int main() {
+int main()
+{
     int a, b;
     int *pa = &a, *pb = &b;
     
