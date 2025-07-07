@@ -1,4 +1,4 @@
-1
+1 class and object
 #include <iostream>
 class Student
 {
