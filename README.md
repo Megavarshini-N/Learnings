@@ -65,3 +65,40 @@ int main() {
 
     return 0;
 }
+
+3
+#include<iostream>
+using namespace std;
+int arra(int arr[],int n)
+{
+    int s=0,t;
+    int e=n-1;
+    while(s<e)
+    {
+        t=arr[s];
+        arr[s]=arr[e];
+        arr[e]=t;
+        s++;
+        e--;
+    }
+    return 0;
+}
+void pri(int arr[],int n)
+{
+    int i;
+    for(i=0;i<n;i++)
+    {
+        cout<< arr[i]<<" ";
+    }
+}
+int main() {
+     int arr[1000],i,n;
+     cin>>n;
+     for(i=0;i<n;i++)
+     {
+        cin>>arr[i];
+     }
+     arra(arr, n);
+     pri (arr, n);
+    return 0;
+}
